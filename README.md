@@ -1,4 +1,4 @@
-hack-cup
-========
+# Xebia Hack Cup Website
 
-Xebia Hack Cup Website
+Based on [Angular](http://angularjs.org/).
+
