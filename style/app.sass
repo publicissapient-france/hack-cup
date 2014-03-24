@@ -1,0 +1,113 @@
+$color1: #ffebba
+$color2: #74beb5
+$color3: #6a205f
+$color3-light: #c8adc4
+$color-dark: #3e3e3e
+$color-4: #007685
+
+@font-face
+  font-family: ThirstyScriptExtraBoldDemo
+  src: url("../font/ThirstyScriptExtraBoldDemo.otf")
+
+@font-face
+  font-family: Gudea
+  src: url("http://fonts.googleapis.com/css?family=Gudea")
+
+body
+  padding: 0
+  margin: 0
+
+.header
+  text-align: center
+  padding: 40px
+
+.header .subtitle
+  font-family: ThirstyScriptExtraBoldDemo
+  font-size: 29px
+  color: $color1
+
+.header .title
+  font-family: ThirstyScriptExtraBoldDemo
+  font-size: 50px
+  color: $color1
+
+.header .date
+  font-family: "Gudea", sans-serif
+  font-size: 44px
+  color: $color2
+  text-transform: uppercase
+
+.menu
+  height: 50px
+  background-color: $color3
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, .5)
+
+.key-container
+  margin: 80px auto 80px auto
+  width: 550px
+
+.key
+  float: left
+  text-align: center
+  width: 180px
+
+.key .value
+  color: $color-dark
+  font-family: "Gudea", sans-serif
+  font-size: 30px
+
+.key .value .round
+  margin: 0 auto 10px auto
+  border: solid 10px $color3
+  background-color: $color3-light
+  color: #FFFFFF
+  height: 83px
+  width: 100px
+  border-radius: 60px
+  font-family: ThirstyScriptExtraBoldDemo
+  font-size: 48px
+  padding-top: 17px
+
+.info-container
+  background-color: $color3
+  padding: 40px
+  color: #FFFFFF
+  font-family: "Gudea", sans-serif
+  font-size: 20px
+  line-height: 40px
+
+.participant-container
+  padding: 40px
+  font-family: "Gudea", sans-serif
+  font-size: 20px
+  color: $color-dark
+
+.header-category
+  background: url(../img/img_background_title.png) no-repeat center
+  width: 564px
+  height: 89px
+  margin: 0 auto 0 auto
+  padding: 60px
+
+.header-text
+  font-family: ThirstyScriptExtraBoldDemo
+  font-size: 30px
+  color: #FFFFFF
+  text-align: center
+  padding-top: 25px
+
+.btn
+  font-family: "Gudea", sans-serif
+  background-color: $color-4
+  height: 45px
+  color: #FFFFFF
+  text-align: center
+  width: 300px
+  font-size: 30px
+  margin: 60px auto 0 auto
+  padding-top: 8px
+  cursor: pointer
+
+.btn.dark
+  background-color: $color3
+  color: #FFFFFF
