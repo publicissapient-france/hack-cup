@@ -6,6 +6,11 @@ See [Hack Cup](http://xebia-france.github.io/hack-cup/#/home)
 
 ## How To
 
+Build project
+
+    $ npm install
+    $ grunt dist
+
 Generate dist/ folder
 
     $ grunt dist

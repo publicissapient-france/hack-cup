@@ -38,20 +38,30 @@ module.exports = function (grunt) {
         },
         copy: {
             main: {
-                files: [
-                    {src: ['img/*', 'view/*'], dest: 'dist/', filter: 'isFile'},
-                    {expand: true, flatten: true, src: ['<%= concat.css.dest %>'], dest: 'dist/', filter: 'isFile'}
-                ]
+                src: ['img/*', 'view/*', 'favicon.ico', 'font/*'], dest: 'dist/', filter: 'isFile'
             },
             index: {
                 src: 'index.html',
                 dest: 'dist/',
                 options: {
-                    process: function (content, srcpath) {
+                    process: function (content) {
                         content = content.replace(/<script src=.*script>\n/g, "");
                         content = content.replace(/<\/body>/, "<script src=\"hack-cup.min.js\"></script>\n</body>");
                         content = content.replace(/<link rel="stylesheet" href="bower_components.*>/, "");
                         content = content.replace(/<link rel="stylesheet" href="style.*>/, "<link rel=\"stylesheet\" href=\"hack-cup.css\"/>");
+                        return content;
+                    }
+                }
+            },
+            css: {
+                files: [
+                    {src: 'build/<%= pkg.name %>.css', dest: 'dist/<%= pkg.name %>.css'},
+                    {src: 'dist/view/footer.html', dest: 'dist/view/footer.html'}
+                ],
+                options: {
+                    process: function (content) {
+                        content = content.replace(/..\/img/g, "img");
+                        content = content.replace(/..\/font/g, "font");
                         return content;
                     }
                 }
@@ -62,14 +72,17 @@ module.exports = function (grunt) {
                 base: 'dist'
             },
             src: ['**']
-        }
+        },
+        'clean': ['build', 'dist']
     });
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-gh-pages');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
-    grunt.registerTask('dist', ['concat', 'uglify', 'copy']);
+    grunt.registerTask('dist', ['clean', 'concat', 'uglify', 'copy']);
 
-};
+}
+;
