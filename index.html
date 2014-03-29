@@ -8,9 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
 </head>
 <body>
-<ng-include src="'view/_header.html'"></ng-include>
-<hc-menu></hc-menu>
-<div ng-view class=""></div>
+<div class="prefix-25 grid-50">
+    <ng-include src="'view/_header.html'"></ng-include>
+    <div ng-view></div>
+    <ng-include src="'view/_footer.html'"></ng-include>
+</div>
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-route/angular-route.min.js"></script>
 <script src="bower_components/jQuery/dist/jquery.min.js"></script>

@@ -1,13 +1,15 @@
-$color1: #ffebba
+$color1: #FFEBBA
 $color2: #74beb5
 $color3: #6a205f
 $color3-light: #c8adc4
 $color-dark: #3e3e3e
-$color-4: #007685
+$color-bg: #007685
+$color4: #005F72
 
-@font-face
-  font-family: ThirstyScriptExtraBoldDemo
-  src: url("../font/ThirstyScriptExtraBoldDemo.otf")
+$border-top: dashed 3px $color2
+$category-padding: 40px 20px 90px 20px
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,700|Pacifico)
 
 @font-face
   font-family: Gudea
@@ -15,58 +17,132 @@ $color-4: #007685
 
 body
   padding: 0
-  margin: 0
+  margin: 50px 0 0 0
+  font-family: 'Roboto', sans-serif
+  background: $color-bg url('../img/bg.png') center 0 no-repeat
+  color: #FFFFFF
+  font-size: 25px
+  text-align: center
+  background-size: 100%
+
+.grid-50
+  padding: 0
+
+.hackcup-logo
+  background: url('../img/ic_logo@2x.png') center 0 no-repeat
+  height: 324px
+  @media screen and (max-width: 400px)
+    background-size: 100%
+    margin: 0 10px 0 10px
 
 .header
   text-align: center
-  padding: 40px
 
 .header .subtitle
-  font-family: ThirstyScriptExtraBoldDemo
-  font-size: 29px
+  margin-top: 20px
   color: $color1
 
 .header .title
-  font-family: ThirstyScriptExtraBoldDemo
   font-size: 50px
   color: $color1
+  @media screen and (max-width: 320px)
+    font-size: 40px
+
+.header .custom-title
+  font-family: 'Pacifico', cursive
 
 .header .date
-  font-family: "Gudea", sans-serif
-  font-size: 44px
-  color: $color2
-  text-transform: uppercase
-
-.menu
-  height: 50px
-  background-color: $color3
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, .5)
+  font-size: 40px
+  @media screen and (max-width: 320px)
+    font-size: 30px
 
 .key-container
-  margin: 80px auto 80px auto
-  width: 550px
+  background: url('../img/ic_grid@2x.png') center 0 no-repeat
+  height: 472px
+  width: 480px
+  margin: 200px auto 0 auto
+  position: relative
+  @media screen and (max-width: 480px)
+    width: 320px
+    background-size: 100%
+    margin: 100px auto 0 auto
+    height: 350px
 
-.key
-  float: left
+#key1
+  position: absolute
+  top: 50px
+  left: 34px
+  font-size: 75px
+  width: 168px
   text-align: center
-  width: 180px
+  font-weight: 700
+  @media screen and (max-width: 480px)
+    top: 20px
+    left: 23px
+    width: 112px
+    font-size: 65px
 
-.key .value
-  color: $color-dark
-  font-family: "Gudea", sans-serif
-  font-size: 30px
+#key2
+  position: absolute
+  top: 50px
+  left: 292px
+  font-size: 75px
+  width: 168px
+  text-align: center
+  font-weight: 700
+  @media screen and (max-width: 480px)
+    top: 20px
+    left: 188px
+    width: 112px
+    font-size: 65px
 
-.key .value .round
-  margin: 0 auto 10px auto
-  border: solid 10px $color3
-  background-color: $color3-light
-  color: #FFFFFF
-  height: 83px
-  width: 100px
-  border-radius: 60px
-  font-family: ThirstyScriptExtraBoldDemo
-  font-size: 48px
-  padding-top: 17px
+#key1-desc
+  position: absolute
+  top: 160px
+  left: 34px
+  width: 168px
+  text-align: center
+  font-size: 25px
+  text-transform: uppercase
+  @media screen and (max-width: 480px)
+    top: 107px
+    left: 23px
+    width: 112px
+    font-size: 16px
+
+#key2-desc
+  position: absolute
+  top: 160px
+  left: 292px
+  width: 168px
+  text-align: center
+  font-size: 25px
+  text-transform: uppercase
+  @media screen and (max-width: 480px)
+    top: 107px
+    left: 188px
+    width: 112px
+    font-size: 16px
+
+#key3
+  color: $color1
+  font-weight: 700
+  position: absolute
+  top: 292px
+  left: 145px
+  font-size: 75px
+  width: 194px
+  @media screen and (max-width: 480px)
+    top: 188px
+    left: 97px
+    font-size: 55px
+    width: 129px
+
+.description-container
+  padding: $category-padding
+
+.thin
+  font-weight: 300
 
 .info-container
   background-color: $color3
@@ -77,37 +153,196 @@ body
   line-height: 40px
 
 .participant-container
-  padding: 40px
-  font-family: "Gudea", sans-serif
-  font-size: 20px
-  color: $color-dark
+  border-top: $border-top
+  padding: $category-padding
 
 .header-category
-  background: url(../img/img_background_title.png) no-repeat center
-  width: 564px
-  height: 89px
-  margin: 0 auto 0 auto
-  padding: 60px
+  background: url(../img/ic_category_header.png) center 0 no-repeat
+  height: 97px
+  margin: 0 auto 30px auto
+  position: relative
+  font-family: "Pacifico", cursive
+  font-size: 35px
+  line-height: 77px
+  background-size: contain
+  min-height: 100px
+  @media screen and (max-width: 420px)
+    font-size: 30px
+    line-height: 57px
+  @media screen and (max-width: 320px)
+    width: 300px
+    height: 70px
+    font-size: 25px
+    margin-left: -10px
 
-.header-text
-  font-family: ThirstyScriptExtraBoldDemo
+.price-container
+  border-top: $border-top
+  padding: $category-padding
+  background-color: $color4
+
+.price-info
+  text-transform: uppercase
+
+.price-info .big
+  font-size: 55px
+  @media screen and (max-width: 480px)
+    font-size: 45px
+
+.price-info .color
+  color: $color1
+
+.price-info .thin
+  font-size: 35px
+
+.header-price
+  background: url('../img/ic_logo_winner.png') center 0 no-repeat
+  height: 314px
+  margin: 0 auto 0 auto
+  position: relative
+  @media screen and (max-width: 480px)
+    width: 350px
+    background-size: 100%
+  @media screen and (max-width: 320px)
+    width: 300px
+    background-size: 100%
+    margin-left: -10px
+
+.header-price .label
+  color: $color1
+  position: absolute
   font-size: 30px
-  color: #FFFFFF
+  font-family: "Pacifico", cursive
+  width: 100%
+  top: 232px
+  @media screen and (max-width: 480px)
+    top: 189px
+  @media screen and (max-width: 320px)
+    top: 159px
+
+.key-date-container
+  padding: $category-padding
+  background-color: $color-bg
+  text-align: left
+
+.key-date-container .header-category
   text-align: center
-  padding-top: 25px
+
+.key-date-container .label
+  color: $color1
+  font-weight: 700
+
+.key-date-container .value
+  font-weight: 300
+
+.agenda-container
+  border-top: $border-top
+  padding: $category-padding
+  background-color: $color-bg
+  text-align: left
+
+.agenda-container .header-category
+  text-align: center
+
+.agenda-container .day
+  color: $color1
+  font-size: 48px
+  margin-left: 20px
+  font-family: 'Pacifico', cursive
+  @media screen and (max-width: 320px)
+    font-size: 40px
+
+.agenda-container .label
+  font-weight: 700
+
+.agenda-container .value
+  font-weight: 300
+
+.ready-container
+  border-top: $border-top
+  background-color: $color3
+  padding: $category-padding
+
+.ready-container .title
+  font-size: 48px
+
+.loading-dot
+  font-size: 48px
+
+.note-subscription
+  font-size: 24px
+  font-weight: 300
+
+.place-container
+  padding: $category-padding
+
+.address-container .color
+  color: $color1
+
+.footer
+  padding: 60px 0 60px 0
+  background-color: $color4
+  border-top: $border-top
+
+.partner-list
+  background: url("../img/ic-partner.png") center 0 no-repeat
+  width: 90%
+  height: 173px
+  margin: 0 auto 0 auto
+  position: relative
+  background-size: 100%
+
+.partner-link
+  float: left
+  margin-top: 5%
+  height: 60%
+
+.partner-link.partner-link-1
+  width: 20%
+  margin-left: 7%
+
+.partner-link.partner-link-2
+  width: 9%
+  margin-left: 2%
+
+.partner-link.partner-link-3
+  width: 14%
+  margin-left: 3%
+
+.partner-link.partner-link-4
+  width: 12%
+  margin-left: 3%
+
+.partner-link.partner-link-5
+  width: 19%
+  margin-left: 3%
 
 .btn
-  font-family: "Gudea", sans-serif
-  background-color: $color-4
-  height: 45px
-  color: #FFFFFF
-  text-align: center
-  width: 300px
-  font-size: 30px
+  background-color: $color1
+  height: 75px
+  font-size: 40px
   margin: 60px auto 0 auto
   padding-top: 8px
-  cursor: pointer
+  text-transform: uppercase
+  position: relative
 
 .btn.dark
   background-color: $color3
   color: #FFFFFF
+
+.map
+  margin: -50px 20px 20px 20px
+  @media screen and (min-width: 1024px)
+    margin: -50px 0 20px 0
+
+.btn a
+  top: 0
+  left: 0
+  line-height: 80px
+  width: 100%
+  height: 100%
+  position: absolute
+  color: $color3
+  text-decoration: none
+
+.btn a:hover
+  color: $color3
