@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" ng-app="hackCup">
+<head>
+    <meta charset="utf-8">
+    <title>Xebia Hack Cup</title>
+    
+    <link rel="stylesheet" href="hack-cup.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+</head>
+<body>
+<div class="prefix-25 grid-50">
+    <ng-include src="'view/_header.html'"></ng-include>
+    <div ng-view></div>
+    <ng-include src="'view/_footer.html'"></ng-include>
+</div>
+<script src="hack-cup.min.js"></script>
+</body>
+</html>
