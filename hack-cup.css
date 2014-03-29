@@ -995,15 +995,12 @@
     width: 100%;
   }
 }
-@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,700|Pacifico);
-@font-face {
-  font-family: Gudea;
-  src: url("http://fonts.googleapis.com/css?family=Gudea"); }
+@import url("http://fonts.googleapis.com/css?family=Roboto:300,400,700|Pacifico");
 body {
   padding: 0;
   margin: 50px 0 0 0;
   font-family: "Roboto", sans-serif;
-  background: #007685 url("../img/bg.png") center 0 no-repeat;
+  background: #007685 url("img/bg.png") center 0 no-repeat;
   color: white;
   font-size: 25px;
   text-align: center;
@@ -1013,7 +1010,7 @@ body {
   padding: 0; }
 
 .hackcup-logo {
-  background: url("../img/ic_logo@2x.png") center 0 no-repeat;
+  background: url("img/ic_logo@2x.png") center 0 no-repeat;
   height: 324px; }
   @media screen and (max-width: 400px) {
     .hackcup-logo {
@@ -1044,7 +1041,7 @@ body {
       font-size: 30px; } }
 
 .key-container {
-  background: url("../img/ic_grid@2x.png") center 0 no-repeat;
+  background: url("img/ic_grid@2x.png") center 0 no-repeat;
   height: 472px;
   width: 480px;
   margin: 200px auto 0 auto;
@@ -1150,7 +1147,7 @@ body {
   padding: 40px 20px 90px 20px; }
 
 .header-category {
-  background: url(../img/ic_category_header.png) center 0 no-repeat;
+  background: url("img/ic_category_header.png") center 0 no-repeat;
   height: 97px;
   margin: 0 auto 30px auto;
   position: relative;
@@ -1191,7 +1188,7 @@ body {
   font-size: 35px; }
 
 .header-price {
-  background: url("../img/ic_logo_winner.png") center 0 no-repeat;
+  background: url("img/ic_logo_winner.png") center 0 no-repeat;
   height: 314px;
   margin: 0 auto 0 auto;
   position: relative; }
@@ -1285,7 +1282,7 @@ body {
   border-top: dashed 3px #74beb5; }
 
 .partner-list {
-  background: url("../img/ic-partner.png") center 0 no-repeat;
+  background: url("img/ic-partner.png") center 0 no-repeat;
   width: 90%;
   height: 173px;
   margin: 0 auto 0 auto;
