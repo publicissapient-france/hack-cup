@@ -995,6 +995,22 @@
     width: 100%;
   }
 }
+@font-face {
+  font-family: "Roboto";
+  src: url("font/Roboto-Regular.ttf");
+  font-weight: 400; }
+@font-face {
+  font-family: "Roboto";
+  src: url("font/Roboto-Bold.ttf");
+  font-weight: 700; }
+@font-face {
+  font-family: "Roboto";
+  src: url("font/Roboto-Light.ttf");
+  font-weight: 300; }
+@font-face {
+  font-family: "Pacifico";
+  src: url("font/Pacifico.ttf");
+  font-weight: 400; }
 body {
   padding: 0;
   margin: 50px 0 0 0;
