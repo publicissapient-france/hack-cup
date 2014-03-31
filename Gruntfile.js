@@ -11,6 +11,8 @@ module.exports = function (grunt) {
                 src: [
                     'bower_components/angular/angular.min.js',
                     'bower_components/angular-route/angular-route.min.js',
+                    'bower_components/angulartics/dist/angulartics.min.js',
+                    'bower_components/angulartics/dist/angulartics-ga.min.js',
                     'js/**/*.js'
                 ],
                 dest: 'build/<%= pkg.name %>.js'

@@ -16,6 +16,7 @@
         "angular": "~1.2.14",
         "angular-route": "~1.2.14",
         "jQuery": "~1.11.0",
-        "unsemantic": "https://github.com/nathansmith/unsemantic.git"
+        "unsemantic": "https://github.com/nathansmith/unsemantic.git",
+        "angulartics": "~0.14.15"
     }
 }
