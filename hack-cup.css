@@ -1017,13 +1017,16 @@ body {
   font-family: "Roboto", sans-serif;
   background: #007685 url("img/bg.jpg") center 0 no-repeat;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   background-size: 100%; }
 
 .col {
   width: 50%;
   margin: 0 auto 0 auto; }
+  @media screen and (max-width: 1024px) {
+    .col {
+      width: 100%; } }
 
 .grid-50 {
   padding: 0; }
@@ -1190,7 +1193,6 @@ body {
       margin-left: -10px; } }
 
 .price-container {
-  border-top: dashed 3px #74beb5;
   padding: 40px 20px 90px 20px;
   background-color: #005f72; }
 
