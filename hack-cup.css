@@ -1015,7 +1015,7 @@ body {
   padding: 0;
   margin: 50px 0 0 0;
   font-family: "Roboto", sans-serif;
-  background: #007685 url("img/bg.png") center 0 no-repeat;
+  background: #007685 url("img/bg.jpg") center 0 no-repeat;
   color: white;
   font-size: 25px;
   text-align: center;
@@ -1041,7 +1041,8 @@ body {
 
 .header .title {
   font-size: 50px;
-  color: #ffebba; }
+  color: #ffebba;
+  font-weight: 300; }
   @media screen and (max-width: 320px) {
     .header .title {
       font-size: 40px; } }
@@ -1050,6 +1051,7 @@ body {
   font-family: "Pacifico", cursive; }
 
 .header .date {
+  margin-top: 20px;
   font-size: 40px; }
   @media screen and (max-width: 320px) {
     .header .date {
@@ -1086,7 +1088,7 @@ body {
 #key2 {
   position: absolute;
   top: 50px;
-  left: 292px;
+  left: 282px;
   font-size: 75px;
   width: 168px;
   text-align: center;
@@ -1116,7 +1118,7 @@ body {
 #key2-desc {
   position: absolute;
   top: 160px;
-  left: 292px;
+  left: 282px;
   width: 168px;
   text-align: center;
   font-size: 25px;
@@ -1177,6 +1179,7 @@ body {
       line-height: 57px; } }
   @media screen and (max-width: 320px) {
     .header-category {
+      line-height: 45px;
       width: 300px;
       height: 70px;
       font-size: 25px;
@@ -1209,6 +1212,7 @@ body {
   position: relative; }
   @media screen and (max-width: 480px) {
     .header-price {
+      height: 250px;
       width: 350px;
       background-size: 100%; } }
   @media screen and (max-width: 320px) {
@@ -1243,7 +1247,8 @@ body {
   font-weight: 700; }
 
 .key-date-container .value {
-  font-weight: 300; }
+  font-weight: 300;
+  margin-bottom: 20px; }
 
 .agenda-container {
   border-top: dashed 3px #74beb5;
@@ -1254,19 +1259,20 @@ body {
   text-align: center; }
 
 .agenda-container .day {
+  margin-top: 20px;
   color: #ffebba;
-  font-size: 48px;
-  margin-left: 20px;
+  font-size: 38px;
   font-family: "Pacifico", cursive; }
   @media screen and (max-width: 320px) {
     .agenda-container .day {
-      font-size: 40px; } }
+      font-size: 35px; } }
 
 .agenda-container .label {
   font-weight: 700; }
 
 .agenda-container .value {
-  font-weight: 300; }
+  font-weight: 300;
+  margin-bottom: 20px; }
 
 .ready-container {
   border-top: dashed 3px #74beb5;
@@ -1274,10 +1280,10 @@ body {
   padding: 40px 20px 90px 20px; }
 
 .ready-container .title {
-  font-size: 40px; }
+  font-size: 35px; }
 
 .loading-dot {
-  font-size: 40px; }
+  font-size: 35px; }
 
 .note-subscription {
   font-size: 24px;
@@ -1330,21 +1336,44 @@ body {
 .btn {
   background-color: #ffebba;
   height: 75px;
-  font-size: 40px;
-  margin: 60px auto 0 auto;
+  width: 80%;
+  font-size: 35px;
+  margin: 30px auto 0 auto;
   padding-top: 8px;
   text-transform: uppercase;
   position: relative; }
+  @media screen and (max-width: 480px) {
+    .btn {
+      width: auto; } }
+
+.btn.light {
+  width: 60%;
+  height: 50px;
+  font-size: 25px;
+  line-height: 50px;
+  text-transform: none; }
+  @media screen and (max-width: 480px) {
+    .btn.light {
+      width: auto; } }
+
+.btn .arrow {
+  position: absolute;
+  right: 4%;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 60px;
+  color: #6a205f; }
 
 .btn.dark {
   background-color: #6a205f;
   color: white; }
 
 .map {
-  margin: -50px 20px 20px 20px; }
+  margin: -50px 20px 0 20px; }
   @media screen and (min-width: 1024px) {
     .map {
-      margin: -50px 0 20px 0; } }
+      margin: -50px 0 0 0; } }
 
 .btn a {
   top: 0;
@@ -1354,7 +1383,15 @@ body {
   height: 100%;
   position: absolute;
   color: #6a205f;
-  text-decoration: none; }
+  text-decoration: none;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2); }
+
+.btn.light a {
+  line-height: 60px; }
 
 .btn a:hover {
   color: #6a205f; }
+
+a {
+  color: white;
+  text-decoration: none; }
