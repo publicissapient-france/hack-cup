@@ -1021,6 +1021,10 @@ body {
   text-align: center;
   background-size: 100%; }
 
+.col {
+  width: 50%;
+  margin: 0 auto 0 auto; }
+
 .grid-50 {
   padding: 0; }
 
@@ -1275,7 +1279,6 @@ body {
   margin-bottom: 20px; }
 
 .ready-container {
-  border-top: dashed 3px #74beb5;
   background-color: #6a205f;
   padding: 40px 20px 90px 20px; }
 
@@ -1297,8 +1300,7 @@ body {
 
 .footer {
   padding: 60px 0 60px 0;
-  background-color: #005f72;
-  border-top: dashed 3px #74beb5; }
+  background-color: #005f72; }
 
 .partner-list {
   background: url("img/ic-partner.png") center 0 no-repeat;
@@ -1306,7 +1308,8 @@ body {
   height: 173px;
   margin: 0 auto 0 auto;
   position: relative;
-  background-size: 100%; }
+  background-size: 100%;
+  max-width: 700px; }
 
 .partner-link {
   float: left;
