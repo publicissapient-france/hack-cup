@@ -38,7 +38,7 @@ module.exports = function (grunt) {
         },
         copy: {
             main: {
-                src: ['img/*', 'view/*', 'favicon.ico', 'font/*'], dest: 'dist/', filter: 'isFile'
+                src: ['img/*', 'view/*', 'favicon.ico', 'font/*', 'CNAME'], dest: 'dist/', filter: 'isFile'
             },
             index: {
                 src: 'index.html',
