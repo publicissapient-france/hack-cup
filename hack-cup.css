@@ -1233,8 +1233,7 @@ body {
 
 .key-date-container {
   padding: 40px 20px 90px 20px;
-  background-color: #007685;
-  text-align: left; }
+  background-color: #007685; }
 
 .key-date-container .header-category {
   text-align: center; }
@@ -1249,8 +1248,7 @@ body {
 .agenda-container {
   border-top: dashed 3px #74beb5;
   padding: 40px 20px 90px 20px;
-  background-color: #007685;
-  text-align: left; }
+  background-color: #007685; }
 
 .agenda-container .header-category {
   text-align: center; }
