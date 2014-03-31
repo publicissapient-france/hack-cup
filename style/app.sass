@@ -35,13 +35,16 @@ body
   font-family: 'Roboto', sans-serif
   background: $color-bg url('../img/bg.jpg') center 0 no-repeat
   color: #FFFFFF
-  font-size: 25px
+  font-size: 20px
   text-align: center
   background-size: 100%
 
 .col
   width: 50%
   margin: 0 auto 0 auto
+  @media screen and (max-width: 1024px)
+    width: 100%
+
 
 .grid-50
   padding: 0
@@ -197,7 +200,6 @@ body
     margin-left: -10px
 
 .price-container
-  border-top: $border-top
   padding: $category-padding
   background-color: $color4
 
