@@ -18,3 +18,4 @@ Push dist/ folder to gh-pages branch
 
     $ grunt gh-pages
 
+> Initialised by Benjamin [@benjlacroix](https://twitter.com/benjlacroix) in April 2014.
